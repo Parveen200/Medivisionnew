@@ -10,19 +10,19 @@ app = Flask(__name__, static_folder='static')
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('templates/index.html')
 
 @app.route('/Braintumor')
 def braintumor():
-    return render_template('Braintumor.html')
+    return render_template('templates/Braintumor.html')
 
 @app.route('/Breastcancer')
 def breastcancer():
-    return render_template('Breastcancer.html')
+    return render_template('templates/Breastcancer.html')
 
 @app.route('/Pneumonia')
 def pneumonia():
-    return render_template('Pneumonia.html')
+    return render_template('templates/Pneumonia.html')
 
 
 @app.route('/predict', methods=['POST'])  # type: ignore
