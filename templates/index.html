@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Medivision </title>
+    <!-- <link rel="stylesheet" href="\static\css\style1.css"> -->
+    <style>
+ body {
+    margin: 0; /* Remove default margin */
+    padding: 0; 
+    width: 95vw; 
+    height: 90vh; 
+    overflow: hidden; 
+    background: url("/static/Images/background.jpg") no-repeat center center fixed;
+    background-size: cover;
+
+}
+  nav {  
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 30px 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 10000;
+      background-color: w;
+  }
+  nav ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  nav ul li {
+      list-style: none;
+      margin-left: 20px;
+  }
+  nav ul li a {
+      text-decoration: none;
+      padding: 6px 15px;
+      color: black;
+      border-radius: 20px;
+  }
+  nav ul li a:hover {
+        background-color: white; /* Change the background color on hover */
+        color: black; /* Change the text color on hover */
+      }
+  .left{
+    margin-right: 150px;
+  }
+    nav img {
+        width: 200px; /* Adjust the width of the logo */
+        height: auto; /* Maintain aspect ratio */
+        margin-right: 15px; /* Add some space between the logo and text */
+        margin-top: 10px;
+    }
+ 
+
+  </style>
+
+  </head>
+  <body>
+<nav>
+
+      <img src="{{ url_for('static', filename='Images/logo.png') }}">
+      <ul class="left">
+        <!-- <li><a href="/" class="active">Home</a></li> -->
+        <li><a href="/Braintumor">Brain Tumor</a></li>
+        <li><a href="/Breastcancer">Breast Cancer</a></li>
+        <li><a href="/Pneumonia">Pneumonia</a></li>
+      </ul>
+
+</nav>
+  </body>
+</html>
