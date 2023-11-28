@@ -6,24 +6,23 @@ from BreastCancer_app import breast_get_className, breast_getResult
 from Pneumonia_app import pneumonia_get_className, pneumonia_getResult
 
 
-
 app = Flask(__name__, static_folder='static')
 
 @app.route('/')
 def home():
-    return render_template('templates/index.html')
+    return render_template('index.html')
 
 @app.route('/Braintumor')
 def braintumor():
-    return render_template('templates/Braintumor.html')
+    return render_template('Braintumor.html')
 
 @app.route('/Breastcancer')
 def breastcancer():
-    return render_template('templates/Breastcancer.html')
+    return render_template('Breastcancer.html')
 
 @app.route('/Pneumonia')
 def pneumonia():
-    return render_template('templates/Pneumonia.html')
+    return render_template('Pneumonia.html')
 
 
 @app.route('/predict', methods=['POST'])  # type: ignore
