@@ -4,7 +4,7 @@ from werkzeug.utils import secure_filename
 from BrainTumor_app import get_className, getResult
 from BreastCancer_app import breast_get_className, breast_getResult
 from Pneumonia_app import pneumonia_get_className, pneumonia_getResult
-import cv2
+
 
 
 app = Flask(__name__, static_folder='static')
